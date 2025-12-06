@@ -3,6 +3,7 @@ package nl.ggentertainment.chunkweaver;
 import com.mojang.logging.LogUtils;
 import com.mojang.serialization.Codec;
 import net.minecraft.core.Registry;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
@@ -35,6 +36,7 @@ import nl.ggentertainment.chunkweaver.common.core.classes.blacksmith.BlacksmithA
 import nl.ggentertainment.chunkweaver.common.core.classes.blacksmith.masterwork.MasterworkModifiers;
 import nl.ggentertainment.chunkweaver.common.core.classes.engineer.EngineerEvents;
 import nl.ggentertainment.chunkweaver.common.core.classes.engineer.VaultSlotReward;
+import nl.ggentertainment.chunkweaver.common.core.classes.explorer.ExplorerEvents;
 import nl.ggentertainment.chunkweaver.common.core.classes.farmer.FarmerAttributes;
 import nl.ggentertainment.chunkweaver.common.core.classes.fighter.FighterAbilityReward;
 import nl.ggentertainment.chunkweaver.common.core.classes.fighter.FighterAttributes;
@@ -132,6 +134,7 @@ public class ChunkWeaver {
                 .playToServer(VeinMineKeyUpdatePacket.TYPE, VeinMineKeyUpdatePacket.CODEC, ChunkWeaver::onVeinMineKey) //
                 .playToServer(KeyVaultPackets.OpenMenu.TYPE, KeyVaultPackets.OpenMenu.CODEC, EngineerEvents::openKeyMenu)//
                 .playToServer(OpenRiftCastPacket.TYPE, OpenRiftCastPacket.CODEC, WizardEvents::tryOpenRift)
+                .playToServer(GhostPacket.TYPE, GhostPacket.CODEC, ExplorerEvents::tryGhost)
                 .playToClient(AbilityPackets.OnPick.TYPE, AbilityPackets.OnPick.CODEC, FighterEvents::onPickPacket) //
                 .playToClient(AbilityPackets.OnFinish.TYPE, AbilityPackets.OnFinish.CODEC, FighterEvents::onFinish)//
                 .playToClient(AbilityPackets.OnCharge.TYPE, AbilityPackets.OnCharge.CODEC, FighterEvents::onChargePacket)//

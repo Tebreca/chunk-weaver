@@ -16,7 +16,7 @@ public class ChunkWeaverKeyMappings {
             "key.chunkweaver.vein_mine",
             KeyConflictContext.IN_GAME,
             InputConstants.Type.KEYSYM,
-            GLFW.GLFW_KEY_APOSTROPHE,
+            GLFW.GLFW_KEY_MINUS,
             CATEGORY
     ));
 
@@ -32,7 +32,7 @@ public class ChunkWeaverKeyMappings {
             "key.chunkweaver.key_vault",
             KeyConflictContext.IN_GAME,
             InputConstants.Type.KEYSYM,
-            GLFW.GLFW_KEY_K,
+            GLFW.GLFW_KEY_MINUS,
             CATEGORY
     ));
 
@@ -40,7 +40,15 @@ public class ChunkWeaverKeyMappings {
             "key.chunkweaver.open_rift",
             KeyConflictContext.IN_GAME,
             InputConstants.Type.KEYSYM,
-            GLFW.GLFW_KEY_K,
+            GLFW.GLFW_KEY_MINUS,
+            CATEGORY
+    ));
+
+    public static final Lazy<KeyMapping> GHOST = Lazy.of(() -> new KeyMapping(
+            "key.chunkweaver.ghost",
+            KeyConflictContext.IN_GAME,
+            InputConstants.Type.KEYSYM,
+            GLFW.GLFW_KEY_Z,
             CATEGORY
     ));
 
@@ -51,5 +59,6 @@ public class ChunkWeaverKeyMappings {
         event.register(FIGHTER_ABILITY.get());
         event.register(KEY_VAULT_OPEN.get());
         event.register(OPEN_RIFT.get());
+        event.register(GHOST.get());
     }
 }

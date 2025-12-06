@@ -10,10 +10,7 @@ import net.minecraft.world.phys.HitResult;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
 import nl.ggentertainment.chunkweaver.client.ChunkWeaverKeyMappings;
-import nl.ggentertainment.chunkweaver.common.network.AbilityPackets;
-import nl.ggentertainment.chunkweaver.common.network.KeyVaultPackets;
-import nl.ggentertainment.chunkweaver.common.network.OpenRiftCastPacket;
-import nl.ggentertainment.chunkweaver.common.network.VeinMineKeyUpdatePacket;
+import nl.ggentertainment.chunkweaver.common.network.*;
 
 import static nl.ggentertainment.chunkweaver.common.ChunkWeaverBlocks.INFUSION_TABLE;
 
@@ -27,6 +24,9 @@ public class KeyHandler {
         }
         while (ChunkWeaverKeyMappings.KEY_VAULT_OPEN.get().consumeClick()) {
             PacketDistributor.sendToServer(new KeyVaultPackets.OpenMenu());
+        }
+        while (ChunkWeaverKeyMappings.GHOST.get().consumeClick()) {
+            PacketDistributor.sendToServer(new GhostPacket());
         }
         while (ChunkWeaverKeyMappings.OPEN_RIFT.get().consumeClick()) {
             Minecraft instance = Minecraft.getInstance();

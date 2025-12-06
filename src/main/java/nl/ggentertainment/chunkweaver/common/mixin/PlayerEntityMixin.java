@@ -3,17 +3,21 @@ package nl.ggentertainment.chunkweaver.common.mixin;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
 import nl.ggentertainment.chunkweaver.common.core.classes.PlayerClass;
 import nl.ggentertainment.chunkweaver.common.core.classes.blacksmith.BlacksmithAttributes;
 import nl.ggentertainment.chunkweaver.common.core.classes.engineer.key.DynamicVaultHolder;
 import nl.ggentertainment.chunkweaver.common.core.classes.engineer.key.KeyItemHandler;
+import nl.ggentertainment.chunkweaver.common.core.classes.explorer.ExplorerAttributes;
+import nl.ggentertainment.chunkweaver.common.core.classes.explorer.GhostingEntity;
 import nl.ggentertainment.chunkweaver.common.core.classes.farmer.FarmerAttributes;
 import nl.ggentertainment.chunkweaver.common.core.classes.fighter.FighterAttributes;
 import nl.ggentertainment.chunkweaver.common.core.classes.miner.MinerAttributes;
@@ -34,10 +38,16 @@ import java.util.Optional;
 import static nl.ggentertainment.chunkweaver.ChunkWeaver.CLASS_ATTACHMENT;
 
 @Mixin(value = Player.class, priority = 1200)
-public abstract class PlayerEntityMixin extends Entity implements DynamicVaultHolder {
+public abstract class PlayerEntityMixin extends LivingEntity implements DynamicVaultHolder, GhostingEntity {
 
+    @Unique
+    private long chunkweaver$lastGhost = 0;
+    @Unique
+    private Vec3 chunkweaver$ghostPos = null;
+    @Unique
+    private int chunkweaver$ghostRemaining = 0;
 
-    public PlayerEntityMixin(EntityType<?> entityType, Level level) {
+    public PlayerEntityMixin(EntityType<? extends LivingEntity> entityType, Level level) {
         super(entityType, level);
     }
 
@@ -66,7 +76,11 @@ public abstract class PlayerEntityMixin extends Entity implements DynamicVaultHo
                 // Fighter: Tank
                 .add(FighterAttributes.NEGATE_CHANCE).add(FighterAttributes.NEGATE_AMOUNT)
                 // Wizard
-                .add(WizardAttributes.MAGE_LEVEL);
+                .add(WizardAttributes.MAGE_LEVEL)
+                //Explorer
+                .add(ExplorerAttributes.GHOST_DURATION)
+                .add(ExplorerAttributes.LOOT_MODIFIER)
+                ;
     }
 
     /* Implement DynamicVaultHolder */
@@ -171,5 +185,45 @@ public abstract class PlayerEntityMixin extends Entity implements DynamicVaultHo
         return super.getPersistentData();
     }
 
+
+    @Intrinsic
+    @Override
+    public long getLastGhost() {
+        return chunkweaver$lastGhost;
+    }
+
+    @Intrinsic
+    @Override
+    public void tryGhost() {
+        if (getData(CLASS_ATTACHMENT) == PlayerClass.EXPLORER) {
+            if (chunkweaver$lastGhost + 100 <= tickCount) {
+                chunkweaver$ghostPos = position();
+                chunkweaver$lastGhost = tickCount;
+                if (((Object) this) instanceof ServerPlayer player) {
+                    player.setGameMode(GameType.SPECTATOR);
+                    chunkweaver$ghostRemaining = (int) (player.getAttributeValue(ExplorerAttributes.GHOST_DURATION) * 20);
+                }
+            }
+        }
+    }
+
+    @Override
+    public int ticksRemaining() {
+        return chunkweaver$ghostRemaining;
+    }
+
+    @Inject(method = "tick", at = @At(value = "HEAD"))
+    public void tick(CallbackInfo ci) {
+        if (isGhosted()) {
+            chunkweaver$ghostRemaining--;
+            if (chunkweaver$ghostRemaining == 0) {
+                if (((Object) this) instanceof ServerPlayer player) {
+                    setPos(chunkweaver$ghostPos);
+                    setDeltaMovement(0, 0, 0);
+                    player.setGameMode(GameType.SURVIVAL);
+                }
+            }
+        }
+    }
 
 }

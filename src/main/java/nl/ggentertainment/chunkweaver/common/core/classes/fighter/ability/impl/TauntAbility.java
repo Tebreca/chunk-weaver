@@ -102,7 +102,7 @@ public class TauntAbility implements FighterAbility {
         for (Entity entity : entities) {
             LivingEntity living = (LivingEntity) entity;
             double scalar = Math.min(1, attachment.getDuration() / (double) attachment.ability().getBaseDuration());
-            living.hurt(living.damageSources().playerAttack(player), power * scalar * 10);
+            living.hurt(living.damageSources().playerAttack(player), (float) (power * scalar * 10));
         }
         return true;
     }
