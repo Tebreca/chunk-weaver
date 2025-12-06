@@ -1,0 +1,36 @@
+{
+  "welcome": {
+    "title": "The beginning",
+    "description": "You have always been keen on technology; You can make keys that allow you to patent your technologies",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "chunkweaver:key"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "cost": 0,
+    "rewards": []
+  },
+  "more_slots": {
+    "title": "Another slot",
+    "description": "Add a slot to your key vault",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "chunkweaver:wallet"
+      }
+    },
+    "rewards": [
+      {
+        "type": "chunkweaver:vault_slot",
+        "data": {}
+      }
+    ]
+  }
+}

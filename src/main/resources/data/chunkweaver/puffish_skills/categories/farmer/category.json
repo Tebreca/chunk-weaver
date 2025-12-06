@@ -1,0 +1,11 @@
+{
+  "unlocked_by_default": false,
+  "title": "Farmer",
+  "icon": {
+    "type": "texture",
+    "data": {
+      "texture": "chunkweaver:textures/gui/sprites/farmer.png"
+    }
+  },
+  "background": "textures/gui/advancements/backgrounds/stone.png"
+}

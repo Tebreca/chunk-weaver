@@ -1,0 +1,11 @@
+{
+  "unlocked_by_default": false,
+  "title": "Engineer",
+  "icon": {
+    "type": "texture",
+    "data": {
+      "texture": "chunkweaver:textures/gui/sprites/engineer.png"
+    }
+  },
+  "background": "textures/gui/advancements/backgrounds/stone.png"
+}

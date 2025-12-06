@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "xex",
+    "aba",
+    "xex"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:cobblestone"
+    },
+    "b": {
+      "item": "minecraft:crafting_table"
+    },
+    "e": {
+      "item": "chunkweaver:riftstone"
+    },
+    "a": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "chunkweaver:infusion_table"
+  },
+  "show_notification": false
+}

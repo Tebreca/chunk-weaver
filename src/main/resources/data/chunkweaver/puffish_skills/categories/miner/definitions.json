@@ -1,0 +1,117 @@
+{
+  "welcome": {
+    "title": "The Beginning",
+    "description": "You yearn for the mines: you can supermine entire ore veins and they drop more!",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_pickaxe"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "cost": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.miner.drop_modifier",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.miner.durability_negation",
+          "value": 0.1,
+          "operation": "addition"
+       }
+      }
+    ]
+  },
+  "more_drops": {
+    "title": "(M)ore",
+    "description": "Get more ore per ore!",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:raw_iron"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.miner.drop_modifier",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "more_range": {
+    "title": "All the range!",
+    "description": "Your supermine range increases with 5 blocks",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:strength"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.miner.supermine_range",
+          "value": 5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "more_negation": {
+    "title": "Less more damage",
+    "description": "Your pickaxe breaks less fast",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:diamond_pickaxe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.miner.durability_negation",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "mining_breathing": {
+    "title": "Ore Breathing",
+    "description": "Breaking ore underwater will give you air",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:water_breathing"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.miner.ore_breathing",
+          "value": 5,
+          "operation": "addition"
+        }
+      }
+    ]
+  }
+}

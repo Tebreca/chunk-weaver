@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "exe",
+    "xbx",
+    "exe"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:leather"
+    },
+    "b": {
+      "item": "chunkweaver:rift_coin"
+    }
+  },
+  "result": {
+    "id": "chunkweaver:wallet"
+  },
+  "show_notification": false
+}

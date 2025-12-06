@@ -1,0 +1,11 @@
+{
+  "unlocked_by_default": false,
+  "title": "Explorer",
+  "icon": {
+    "type": "texture",
+    "data": {
+      "texture": "chunkweaver:textures/gui/sprites/explorer.png"
+    }
+  },
+  "background": "textures/gui/advancements/backgrounds/stone.png"
+}

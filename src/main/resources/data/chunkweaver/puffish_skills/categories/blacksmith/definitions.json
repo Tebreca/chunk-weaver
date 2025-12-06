@@ -1,0 +1,194 @@
+{
+  "welcome": {
+    "title": "The beginning",
+    "description": "Weapons you make are of higher quality: Whenever you forge a weapon, you have a chance to create a 'masterwork'",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "cost": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.blacksmith.forge_chance",
+          "value": 0.15,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.blacksmith.forge_modifier",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.blacksmith.forge_rolls",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "getslotting": {
+    "title": "Get slotting",
+    "description": "Your masterworks are sure to get an empty gem slot",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "apotheosis:gem"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.blacksmith.max_slot_count",
+          "value": 1,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.blacksmith.min_slot_count",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "moreslots": {
+    "title": "More slots",
+    "description": "Your masterworks have a chance to get an additional gem slot",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "apotheosis:gem"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.blacksmith.max_slot_count",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "morerolls": {
+    "title": "More modifiers!",
+    "description": "Your masterwork gets +75% chance of generating an additional modifier",
+    "icon": {
+      "type": "texture",
+      "data": {
+        "texture": "minecraft:textures/item/empty_slot_smithing_template_armor_trim.png"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.blacksmith.forge_rolls",
+          "value": 0.75,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "morequality": {
+    "title": "Better Modifiers!",
+    "description": "Your masterwork modifiers get better",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:strength"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.blacksmith.forge_modifier",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "morechance": {
+    "title": "Better Odds!",
+    "description": "Increased chance of forging masterworks",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:luck"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.blacksmith.forge_chance",
+          "value": 0.15,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "anvil_xp": {
+    "title": "Anvil cost reduction",
+    "description": "Using an anvil will cost 10% less XP",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.blacksmith.xp_cost_modifier",
+          "value": -0.10,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "repair_cost": {
+    "title": "Repair cost reduction",
+    "description": "Using an anvil to repair will cost 10% less raw materials",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:weakness"
+      }
+    },
+    "cost": 2,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.blacksmith.xp_cost_modifier",
+          "value": -0.10,
+          "operation": "addition"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,332 @@
+{
+	"welcome": {
+		"definition": "welcome",
+		"x": 0,
+		"y": 73.9008344562721,
+		"root": true
+	},
+	"34od5ck33gnhjvao": {
+		"definition": "getslotting",
+		"x": 0,
+		"y": -36.95041722813605,
+		"root": false
+	},
+	"11itqrp7vwqv412b": {
+		"definition": "morequality",
+		"x": 64,
+		"y": 147.8016689125442,
+		"root": false
+	},
+	"aor951zwf8731c9j": {
+		"definition": "repair_cost",
+		"x": 0,
+		"y": -110.85125168440814,
+		"root": false
+	},
+	"z6owgnvol3s3nysw": {
+		"definition": "morequality",
+		"x": 0,
+		"y": 184.75208614068023,
+		"root": false
+	},
+	"gcntpyz213o3fkqx": {
+		"definition": "morequality",
+		"x": -64,
+		"y": 147.8016689125442,
+		"root": false
+	},
+	"uyw7gxdqfzvlheur": {
+		"definition": "moreslots",
+		"x": 96,
+		"y": 203.22729475474824,
+		"root": false
+	},
+	"a2m5a4k16x1wncd6": {
+		"definition": "morerolls",
+		"x": 128,
+		"y": 147.8016689125442,
+		"root": false
+	},
+	"yd6wuewgdqrd8fjq": {
+		"definition": "morerolls",
+		"x": 96,
+		"y": 92.37604307034012,
+		"root": false
+	},
+	"izw5lgm85q01ibxd": {
+		"definition": "morechance",
+		"x": 128,
+		"y": 184.75208614068023,
+		"root": false
+	},
+	"balbhl0gqv2go3zm": {
+		"definition": "morechance",
+		"x": 128,
+		"y": 110.85125168440814,
+		"root": false
+	},
+	"mo5ozfn1am8eisie": {
+		"definition": "morechance",
+		"x": 64,
+		"y": 221.70250336881628,
+		"root": false
+	},
+	"lcutd665jmn3xnnd": {
+		"definition": "morechance",
+		"x": -32,
+		"y": 240.17771198288426,
+		"root": false
+	},
+	"13ey3a6fithjedoq": {
+		"definition": "morechance",
+		"x": -96,
+		"y": 203.22729475474824,
+		"root": false
+	},
+	"2rgou6b2l2igvqne": {
+		"definition": "morechance",
+		"x": -128,
+		"y": 147.8016689125442,
+		"root": false
+	},
+	"8g9v7ee7scz1fmab": {
+		"definition": "morechance",
+		"x": -96,
+		"y": 92.37604307034012,
+		"root": false
+	},
+	"72rjraiyjeauwyhl": {
+		"definition": "moreslots",
+		"x": -128,
+		"y": 110.85125168440814,
+		"root": false
+	},
+	"yj72veakrnjm8f5d": {
+		"definition": "morerolls",
+		"x": 32,
+		"y": 240.17771198288432,
+		"root": false
+	},
+	"mg1dtcg0t3q8tqgy": {
+		"definition": "morerolls",
+		"x": 0,
+		"y": 258.6529205969523,
+		"root": false
+	},
+	"il6wh3otlpxl984j": {
+		"definition": "moreslots",
+		"x": -128,
+		"y": 184.7520861406802,
+		"root": false
+	},
+	"mx3kldlrp1d5bvh1": {
+		"definition": "morerolls",
+		"x": -64,
+		"y": 221.70250336881625,
+		"root": false
+	},
+	"z2bsbaas4hgevg44": {
+		"definition": "morequality",
+		"x": 192,
+		"y": 147.8016689125442,
+		"root": false
+	},
+	"yfsy5gr98cvruoau": {
+		"definition": "morequality",
+		"x": -192,
+		"y": 147.80166891254416,
+		"root": false
+	},
+	"gwmugus5pbyswh68": {
+		"definition": "morequality",
+		"x": -96,
+		"y": 277.1281292110204,
+		"root": false
+	},
+	"ru56p5t570ezzhpa": {
+		"definition": "morequality",
+		"x": 96,
+		"y": 277.12812921102034,
+		"root": false
+	},
+	"opxeaz6oeovi2dj0": {
+		"definition": "morequality",
+		"x": 0,
+		"y": 332.55375505322445,
+		"root": false
+	},
+	"3v7hdc696r0w8gfi": {
+		"definition": "morequality",
+		"x": 192,
+		"y": 73.9008344562721,
+		"root": false
+	},
+	"a78marq6op7grsd9": {
+		"definition": "morequality",
+		"x": -192,
+		"y": 73.9008344562721,
+		"root": false
+	},
+	"03kpszuaz71ebpew": {
+		"definition": "moreslots",
+		"x": 32,
+		"y": -92.37604307034012,
+		"root": false
+	},
+	"i1f7ssoorrosjeqc": {
+		"definition": "moreslots",
+		"x": 64,
+		"y": -73.9008344562721,
+		"root": false
+	},
+	"suvvpf3udaxw5gjz": {
+		"definition": "moreslots",
+		"x": -32,
+		"y": -92.37604307034012,
+		"root": false
+	},
+	"70swylvo2h4w6p5v": {
+		"definition": "moreslots",
+		"x": -64,
+		"y": -73.9008344562721,
+		"root": false
+	},
+	"ly63r7yfbjipr1mu": {
+		"definition": "morerolls",
+		"x": -64,
+		"y": 0,
+		"root": false
+	},
+	"ocsjjr01ai6u0fym": {
+		"definition": "morerolls",
+		"x": 64,
+		"y": 0,
+		"root": false
+	},
+	"h5doan7bqbn0qgyf": {
+		"definition": "morerolls",
+		"x": 0,
+		"y": -184.75208614068023,
+		"root": false
+	},
+	"v2p2xj9xuk55i82h": {
+		"definition": "anvil_xp",
+		"x": -96,
+		"y": 55.42562584220407,
+		"root": false
+	},
+	"c11toa6d5vb5odv4": {
+		"definition": "anvil_xp",
+		"x": -128,
+		"y": 0,
+		"root": false
+	},
+	"f658fbj0hmc0l75g": {
+		"definition": "anvil_xp",
+		"x": -96,
+		"y": -55.42562584220407,
+		"root": false
+	},
+	"v18kwbjb9zqate7t": {
+		"definition": "repair_cost",
+		"x": -128,
+		"y": -36.95041722813605,
+		"root": false
+	},
+	"zj4b20egag09636u": {
+		"definition": "repair_cost",
+		"x": -128,
+		"y": 36.95041722813605,
+		"root": false
+	},
+	"v2w9xtivwcp4wmt2": {
+		"definition": "repair_cost",
+		"x": 128,
+		"y": 0,
+		"root": false
+	},
+	"4zfjz1ee9o2l0edn": {
+		"definition": "repair_cost",
+		"x": 96,
+		"y": 55.42562584220407,
+		"root": false
+	},
+	"963t1gvvwxh1cwln": {
+		"definition": "repair_cost",
+		"x": 96,
+		"y": -55.42562584220407,
+		"root": false
+	},
+	"3l822o4wtdu825cj": {
+		"definition": "anvil_xp",
+		"x": 128,
+		"y": -36.95041722813605,
+		"root": false
+	},
+	"t7z50pgkb03xn3op": {
+		"definition": "anvil_xp",
+		"x": 128,
+		"y": 36.95041722813605,
+		"root": false
+	},
+	"4kx1bdgz3ejpikio": {
+		"definition": "morerolls",
+		"x": -192,
+		"y": 0,
+		"root": false
+	},
+	"8714kq2i59t2meoe": {
+		"definition": "morerolls",
+		"x": 192,
+		"y": 0,
+		"root": false
+	},
+	"gcmara8z0iasvfa4": {
+		"definition": "anvil_xp",
+		"x": -96,
+		"y": -129.32646029847615,
+		"root": false
+	},
+	"k20j0lhydab4wzvd": {
+		"definition": "repair_cost",
+		"x": 96,
+		"y": -129.32646029847615,
+		"root": false
+	},
+	"kqalqvtfwvw2ax12": {
+		"definition": "repair_cost",
+		"x": -256,
+		"y": 110.85125168440811,
+		"root": false
+	},
+	"6mvrl0zmo3cftylz": {
+		"definition": "repair_cost",
+		"x": 256,
+		"y": 36.95041722813605,
+		"root": false
+	},
+	"xgtip7hx264fqmvj": {
+		"definition": "anvil_xp",
+		"x": -256,
+		"y": 36.95041722813605,
+		"root": false
+	},
+	"zcw2nbrrv8nrwf59": {
+		"definition": "anvil_xp",
+		"x": 256,
+		"y": 110.85125168440814,
+		"root": false
+	},
+	"t635hkp6k4690jab": {
+		"definition": "anvil_xp",
+		"x": 320,
+		"y": 73.9008344562721,
+		"root": false
+	},
+	"mmotvbkusowytpkk": {
+		"definition": "anvil_xp",
+		"x": -320,
+		"y": 73.90083445627207,
+		"root": false
+	}
+}

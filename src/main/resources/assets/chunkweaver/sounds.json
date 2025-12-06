@@ -1,0 +1,8 @@
+{
+  "rift_ambience": {
+    "sounds": [
+      "chunkweaver:rift/main",
+      "chunkweaver:rift/sfx"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "unlocked_by_default": false,
+  "title": "Fighter",
+  "icon": {
+    "type": "texture",
+    "data": {
+      "texture": "chunkweaver:textures/gui/sprites/fighter.png"
+    }
+  },
+  "background": "textures/gui/advancements/backgrounds/stone.png"
+}

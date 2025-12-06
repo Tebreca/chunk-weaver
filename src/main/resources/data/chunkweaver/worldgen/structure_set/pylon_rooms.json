@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "chunkweaver:pylon_room",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 3,
+    "separation": 2,
+    "frequency": 1,
+    "salt": 58392
+  }
+}

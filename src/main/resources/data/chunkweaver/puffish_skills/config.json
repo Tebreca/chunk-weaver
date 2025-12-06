@@ -1,0 +1,13 @@
+{
+	"version": 3,
+
+	"categories": [
+		"wizard",
+		"miner",
+		"farmer",
+		"blacksmith",
+		"engineer",
+		"fighter",
+		"explorer"
+	]
+}

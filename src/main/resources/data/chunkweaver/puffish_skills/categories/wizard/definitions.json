@@ -1,0 +1,50 @@
+{
+  "welcome": {
+    "title": "The Beginning",
+    "description": "Your family secret is knowledge of another world; you have learnt to open rifts by casting a spell using an infusion table and 3 riftstone, 16 iron or 6 enderpearls",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "ars_nouveau:wixie_hat"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "cost": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.wizard.level",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "levelup": {
+    "title": "Level up",
+    "description": "You have gotten more intricate understanding of the rifts, and can summon larger,longer lasting ones",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "chunkweaver:riftstone"
+      }
+    },
+    "cost": 2,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.wizard.level",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  }
+}

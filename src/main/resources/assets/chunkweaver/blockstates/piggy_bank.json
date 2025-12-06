@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chunkweaver:block/piggy_bank",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "chunkweaver:block/piggy_bank",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "chunkweaver:block/piggy_bank",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "chunkweaver:block/piggy_bank"
+    }
+  }
+}

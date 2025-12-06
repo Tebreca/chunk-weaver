@@ -1,0 +1,125 @@
+{
+  "welcome": {
+    "title": "The Beginning",
+    "description": "You have almost magical hands: Crops you harvest yield more, and you can break an entire tree at once.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:wheat_seeds"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "cost": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.farmer.harvest_drop_chance",
+          "value": 1,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.farmer.harvest_regrow_chance",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.farmer.harvest_mutation_quality",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "more_drops": {
+    "title": "More Crop Drops!",
+    "description": "Crops you harvest may drop additional items",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:wheat"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.farmer.harvest_drop_chance",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "more_mutation": {
+    "title": "Weirder Crop Drops!",
+    "description": "Crops you harvest may yield strangely mutated drops",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:chorus_fruit"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.farmer.harvest_mutation_chance",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "better_mutation": {
+    "title": "Weirderer Crop Drops!",
+    "description": "Your mutated drops will be even weirder!",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:beetroot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.farmer.harvest_mutation_quality",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "more_regrowth": {
+    "title": "Second harvest",
+    "description": "Right-clicking a crop has a bigger chance of (partially) regrowing the crop!",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:carrot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.farmer.harvest_regrow_chance",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "item.chunkweaver.riftstone": "Riftstone",
+  "item.chunkweaver.rift_coin": "Rift Coin",
+  "item.chunkweaver.wallet": "Wallet",
+  "item.chunkweaver.stamp": "Stamp",
+  "item.chunkweaver.key": "Key",
+  "item.chunkweaver.tablet": "Tablet of ancient knowledge",
+
+  "item.chunkweaver.infusion_table": "Infusion Table",
+  "item.chunkweaver.piggy_bank": "Piggy Bank",
+  "item.chunkweaver.rift_stabilizer": "Rift stabilizer",
+  "item.chunkweaver.pylon": "Pylon",
+
+  "block.chunkweaver.infusion_table": "Infusion Table",
+  "block.chunkweaver.piggy_bank": "Piggy Bank",
+  "block.chunkweaver.rift_stabilizer": "Rift Stabilizer",
+  "block.chunkweaver.pylon": "Pylon",
+
+  "entity.chunkweaver.rift": "Rift",
+
+  "chunkweaver.configuration.title": "ChunkWeaver Configs",
+  "chunkweaver.configuration.section.chunkweaver.common.toml": "ChunkWeaver Configs",
+  "chunkweaver.configuration.section.chunkweaver.common.toml.title": "ChunkWeaver Configs",
+
+  "chunkweaver.jade.piggy_coins": "Coins stored: %d",
+  "chunkweaver.jade.wallet_coins": "%d coins in wallet",
+  "chunkweaver.jade.pylon.type": "Type: %s",
+  "chunkweaver.jade.pylon.charge": "Charge: %s ",
+
+  "chunkweaver.command.confirm_switch": "Switching class will remove all your skill points, are you sure? Type '/class switch true' to confirm",
+
+  "key.chunkweaver.vein_mine": "Enable super break (Miner, Farmer)",
+  "key.chunkweaver.fighter_ability": "Activate ability (Fighter)",
+  "key.chunkweaver.key_vault": "Open Key Vault (Engineer)",
+  "key.chunkweaver.open_rift": "Cast open rift spell (Wizard)",
+  "key.categories.chunkweaver.all": "Class Keybinds",
+
+  "ability.chunkweaver.bloodlust": "Bloodlust",
+  "ability.chunkweaver.smite": "Smite",
+  "ability.chunkweaver.taunt": "Taunt",
+
+  "chunkweaver.notification.ability_ready": "%s is ready!",
+  "message.chunkweaver.class_chosen": "Chosen class: %s",
+  "message.chunkweaver.class_info_command_info": "To see a small description of your class use the command: /class info",
+  "message.chunkweaver.class_change_command_info": "To choose a different class, use: /class switch",
+  "message.chunkweaver.class.info": "Kijk in het Discord kanaal van GG entertainment voor informatie over jouw class, of vraag het Ewan!",
+
+  "menu.chunkweaver.key_vault": "Key Vault",
+
+  "chunkweaver.pylon.type.energy": "Energy",
+  "chunkweaver.pylon.type.currency": "Currency",
+  "chunkweaver.pylon.type.food": "Food",
+  "chunkweaver.pylon.type.crystalline": "Crystalline",
+
+
+  "chunkweaver.rift.semi-stable": "Stable Rift",
+  "chunkweaver.rift.large": "Large Rift",
+  "chunkweaver.rift.medium": "Medium Rift",
+  "chunkweaver.rift.small": "Small Rift",
+  "chunkweaver.rift.tiny": "Tiny Rift",
+
+  "chunkweaver.infusion_table.ready": "Ready to summon a %s",
+
+  "category.chunkweaver.jei.rift_trade": "Rift Trading",
+  "tooltip.chunkweaver.cost_deviation": "+/- %s",
+  "tooltip.chunkweaver.stamp": "stamped",
+  "tooltip.chunkweaver.stamp_channel": "in channel: %s",
+  "tooltip.chunkweaver.key": "Bound to key: '%s'",
+  "tooltip.chunkweaver.data": "%s Tags of data stored",
+
+  "chunkweaver.item-attribute.key": "marked by key : %s",
+  "chunkweaver.item-attribute.key.inverted": "not marked by key : %s",
+  "chunkweaver.item-attribute.stamp.channel": "stamped for channel: %s",
+  "chunkweaver.item-attribute.stamp.channel.inverted": "not stamped in channel: %s",
+  "chunkweaver.item-attribute.stamp.key": "stamped with key : %s",
+  "chunkweaver.item-attribute.stamp.key.inverted": "stamp without key: %s",
+
+  "atttribute.name.class.fighter.ability_size": "Ability Size",
+  "description.chunkweaver.tablet": "This might contain new knowledge...",
+  "inventory.tab.chunkweaver": "Chunkweaver Items"
+}

@@ -1,0 +1,140 @@
+{
+	"welcome": {
+		"definition": "welcome",
+		"x": 0,
+		"y": 0,
+		"root": true
+	},
+	"enjcq7s032cjk6no": {
+		"definition": "more_drops",
+		"x": -256,
+		"y": 0,
+		"root": false
+	},
+	"j8gizfisnqhn7t9b": {
+		"definition": "more_drops",
+		"x": -192,
+		"y": -32,
+		"root": false
+	},
+	"ru6c1lkoap494w1b": {
+		"definition": "more_drops",
+		"x": -64,
+		"y": 32,
+		"root": false
+	},
+	"q5s3miey1sxtxjng": {
+		"definition": "more_drops",
+		"x": 32,
+		"y": 192,
+		"root": false
+	},
+	"64ufztchf6g8txab": {
+		"definition": "more_drops",
+		"x": 192,
+		"y": 160,
+		"root": false
+	},
+	"1beoclr1hieobwbn": {
+		"definition": "more_drops",
+		"x": 192,
+		"y": 64,
+		"root": false
+	},
+	"oxyan777o8s25ahf": {
+		"definition": "more_drops",
+		"x": -128,
+		"y": -96,
+		"root": false
+	},
+	"mzyfkhb0i504ir6t": {
+		"definition": "more_drops",
+		"x": -224,
+		"y": 160,
+		"root": false
+	},
+	"4l9bfrgowqhy5dtl": {
+		"definition": "more_range",
+		"x": -128,
+		"y": 160,
+		"root": false
+	},
+	"xkod1egrrx2fideu": {
+		"definition": "more_range",
+		"x": 160,
+		"y": 0,
+		"root": false
+	},
+	"9uab75arx7a6i3qd": {
+		"definition": "more_range",
+		"x": -96,
+		"y": -128,
+		"root": false
+	},
+	"47r0va2s9s3seo1y": {
+		"definition": "more_range",
+		"x": -192,
+		"y": 64,
+		"root": false
+	},
+	"b3pl86apkcddd67m": {
+		"definition": "more_negation",
+		"x": 64,
+		"y": 0,
+		"root": false
+	},
+	"k48nm9c2bd5ct2u8": {
+		"definition": "more_negation",
+		"x": 0,
+		"y": -160,
+		"root": false
+	},
+	"n0u4q2zu5wgc7yq6": {
+		"definition": "more_negation",
+		"x": -224,
+		"y": -128,
+		"root": false
+	},
+	"bowfx1m9wk51mr0o": {
+		"definition": "more_negation",
+		"x": 0,
+		"y": 128,
+		"root": false
+	},
+	"tkjbgpq24ilpjm5z": {
+		"definition": "more_negation",
+		"x": 32,
+		"y": 96,
+		"root": false
+	},
+	"k7q8sp47g9k7c6ot": {
+		"definition": "mining_breathing",
+		"x": 160,
+		"y": -128,
+		"root": false
+	},
+	"vsns3392rr840k2b": {
+		"definition": "mining_breathing",
+		"x": 64,
+		"y": 64,
+		"root": false
+	},
+	"1e472foigha7fz1y": {
+		"definition": "mining_breathing",
+		"x": -96,
+		"y": 96,
+		"root": false
+	},
+	"b4a8l6nvz43t1g5g": {
+		"definition": "mining_breathing",
+		"x": 96,
+		"y": -128,
+		"root": false
+	},
+	"e4tl5wkxd2c6m63z": {
+		"definition": "mining_breathing",
+		"x": 0,
+		"y": -64,
+		"root": false
+	}
+}

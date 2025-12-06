@@ -1,0 +1,283 @@
+{
+  "welcome": {
+    "title": "The beginning",
+    "description": "You can fight better than anyone else: you gain an Ability according to your chosen subclass.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "cost": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.ability_length",
+          "value": 1,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.ability_power",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "metadata": {
+      "icon": "do74hz3sy9pv00ji"
+    }
+  },
+  "subclass_brawler": {
+    "title": "Subclass: Brawler",
+    "description": "You succeed in taking on many enemies at once. Gain Bloodlust: Drain the life of nearby enemies",
+    "icon": {
+      "type": "texture",
+      "data": {
+        "texture": "chunkweaver:textures/gui/sprites/abilities/bloodlust.png"
+      }
+    },
+    "rewards": [
+      {
+        "type": "chunkweaver:fighter_ability",
+        "data": "chunkweaver:bloodlust"
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.bloodlust_radius",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "metadata": {
+      "icon": "zjnag6aih0ataikf"
+    }
+  },
+  "subclass_ranger": {
+    "title": "Subclass: Ranger",
+    "description": "You like staying at a distance. Gain smite: Your arrows smite enemies they hit",
+    "icon": {
+      "type": "texture",
+      "data": {
+        "texture": "chunkweaver:textures/gui/sprites/abilities/smite.png"
+      }
+    },
+    "rewards": [
+      {
+        "type": "chunkweaver:fighter_ability",
+        "data": "chunkweaver:smite"
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.arrow_power_modifier",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "subclass_tank": {
+    "title": "Subclass: Tank",
+    "description": "You shrug away any attacks, cant hurt you. Gain Taunt: You taunt all enemies within range, and deal their damage back to them",
+    "icon": {
+      "type": "texture",
+      "data": {
+        "texture": "chunkweaver:textures/gui/sprites/abilities/taunt.png"
+      }
+    },
+    "rewards": [
+      {
+        "type": "chunkweaver:fighter_ability",
+        "data": "chunkweaver:taunt"
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.damage_negation_chance",
+          "value": 0.125,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.damage_negation_amount",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "brawler_radius": {
+    "title": "Wider Bloodlust",
+    "description": "Increase the radius of your Bloodlust ability",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:strength"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.bloodlust_radius",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "brawler_lifesteal": {
+    "title": "Life Drain",
+    "description": "Increase your life steal effectiveness",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:regeneration"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.lifesteal",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "ranger_arrow_power": {
+    "title": "Powerful Arrows",
+    "description": "Increase the power of your arrows",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:arrow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.arrow_power_modifier",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "ranger_accuracy": {
+    "title": "Eagle Eye",
+    "description": "Improve your bow accuracy",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:bow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.bow_accuracy",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "tank_negate_chance": {
+    "title": "Iron Will",
+    "description": "Increase your chance to negate damage",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:shield"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.damage_negation_chance",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "tank_negate_amount": {
+    "title": "Tough Skin",
+    "description": "Increase the amount of damage you negate",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.damage_negation_amount",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "ability_length": {
+    "title": "Extended Duration",
+    "description": "Increase the duration of your fighter abilities",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:speed"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.ability_length",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "ability_power": {
+    "title": "Enhanced Power",
+    "description": "Increase the power of your fighter abilities",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:strength"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.fighter.ability_power",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  }
+}

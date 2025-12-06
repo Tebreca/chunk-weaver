@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "cda",
+    "aba"
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:ender_eye"
+    },
+    "d": {
+      "item": "minecraft:ender_chest"
+    },
+    "c": {
+      "item": "minecraft:pig_spawn_egg"
+    }
+  },
+  "result": {
+    "id": "chunkweaver:piggy_bank"
+  }
+}
