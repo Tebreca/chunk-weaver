@@ -1,1 +1,69 @@
-{}
+{
+  "welcome": {
+    "title": "The beginning",
+    "description": "You have always had a nick for exploration; some weird sixth sense has allowed you to know what is hiding behind each wall",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "cost": 0,
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.explorer.loot_modifier",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "more_loot": {
+    "title": "More loot",
+    "description": "gain 25% chance for extra drops",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "minecraft:luck"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.explorer.loot_modifier",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "longer_ghost": {
+    "title": "Longer ghosting",
+    "description": "Make your ghost ability last 1s longer",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:feather"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "chunkweaver:class.explorer.ghost_duration",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  }
+}

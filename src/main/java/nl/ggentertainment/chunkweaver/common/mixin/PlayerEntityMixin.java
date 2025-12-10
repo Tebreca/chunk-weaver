@@ -2,6 +2,7 @@ package nl.ggentertainment.chunkweaver.common.mixin;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.ListTag;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -170,6 +171,12 @@ public abstract class PlayerEntityMixin extends LivingEntity implements DynamicV
                 PacketDistributor.sendToPlayer(player, new KeyVaultPackets.SlotCount(chunkweaver$slotCount));
             }
         }
+        if (compound.contains("ghostpos")) {
+            ListTag tag = (ListTag) compound.get("ghostpos");
+            assert tag != null;
+            chunkweaver$ghostPos = new Vec3(tag.getDouble(0), tag.getDouble(1), tag.getDouble(2));
+            chunkweaver$lastGhost = 0L;
+        }
     }
 
     @SuppressWarnings("nullable")
@@ -177,6 +184,9 @@ public abstract class PlayerEntityMixin extends LivingEntity implements DynamicV
     public void chunkweaver$write(CompoundTag compound, CallbackInfo ci) {
         if (hasVault()) {
             chunkweaver$keyVault.write(compound);
+        }
+        if (chunkweaver$ghostPos != null) {
+            compound.put("ghostpos", newDoubleList(chunkweaver$ghostPos.x, chunkweaver$ghostPos.y, chunkweaver$ghostPos.z));
         }
     }
 
@@ -218,7 +228,7 @@ public abstract class PlayerEntityMixin extends LivingEntity implements DynamicV
             chunkweaver$ghostRemaining--;
             if (chunkweaver$ghostRemaining == 0) {
                 if (((Object) this) instanceof ServerPlayer player) {
-                    setPos(chunkweaver$ghostPos);
+                    teleportTo(chunkweaver$ghostPos.x, chunkweaver$ghostPos.y + 0.1f, chunkweaver$ghostPos.z);
                     setDeltaMovement(0, 0, 0);
                     player.setGameMode(GameType.SURVIVAL);
                 }

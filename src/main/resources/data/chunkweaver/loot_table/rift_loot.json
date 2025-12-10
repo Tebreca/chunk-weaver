@@ -8,8 +8,8 @@
         {
           "type": "minecraft:item",
           "name": "chunkweaver:riftstone",
-          "weight": 2,
-          "quality": 1,
+          "weight": 4,
+          "quality": 3,
           "functions": []
         },
         {
@@ -22,29 +22,38 @@
         {
           "type": "minecraft:item",
           "name": "chunkweaver:rift_coin",
-          "weight": 1,
+          "weight": 8,
           "quality": 1,
-          "functions": []
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 8,
+              "add": true,
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.25
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 5,
+              "add": true,
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.75
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_ingot",
-          "weight": 1,
-          "quality": 1,
-          "functions": []
-        },
-        {
-          "type": "minecraft:item",
-          "name": "chunkweaver:diamond",
           "weight": 3,
-          "quality": 1,
-          "functions": []
-        },
-        {
-          "type": "minecraft:item",
-          "name": "chunkweaver:wallet",
-          "weight": 1,
-          "quality": 1,
+          "quality": 2,
           "functions": []
         }
       ]

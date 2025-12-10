@@ -16,7 +16,7 @@ public class ExplorerAttributes {
     public static final DeferredRegister<Attribute> registry = DeferredRegister.create(BuiltInRegistries.ATTRIBUTE, MOD_ID);
 
     public static final Holder<Attribute> GHOST_DURATION = register("ghost_duration", 1, 5);
-    public static final Holder<Attribute> LOOT_MODIFIER = registerPercent("loot_modifier", 1, 5);
+    public static final Holder<Attribute> LOOT_MODIFIER = registerPercent("loot_modifier", 0, 3);
 
     public static void register(IEventBus bus) {
         registry.register(bus);

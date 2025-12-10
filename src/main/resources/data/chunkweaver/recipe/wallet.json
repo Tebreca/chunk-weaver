@@ -12,6 +12,9 @@
     },
     "b": {
       "item": "chunkweaver:rift_coin"
+    },
+    "e": {
+      "item": "minecraft:string"
     }
   },
   "result": {

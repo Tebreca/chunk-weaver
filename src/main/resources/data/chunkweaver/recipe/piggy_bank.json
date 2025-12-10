@@ -14,6 +14,9 @@
     },
     "c": {
       "item": "minecraft:pig_spawn_egg"
+    },
+    "a": {
+      "item": "minecraft:air"
     }
   },
   "result": {

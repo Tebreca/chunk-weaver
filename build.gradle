@@ -83,7 +83,7 @@ runs {
         systemProperty 'neoforge.rendernurse.renderdoc.library', 'C:\\Program Files\\RenderDoc\\renderdoc.dll'
         jvmArgument '--enable-preview'
         jvmArgument '--enable-native-access=ALL-UNNAMED'
-        jvmArgument '-javaagent:C:\\RenderNurse.jar'
+       // jvmArgument '-javaagent:C:\\RenderNurse.jar'
     }
 
     server {

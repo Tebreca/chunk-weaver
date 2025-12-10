@@ -36,6 +36,7 @@ import nl.ggentertainment.chunkweaver.common.core.classes.blacksmith.BlacksmithA
 import nl.ggentertainment.chunkweaver.common.core.classes.blacksmith.masterwork.MasterworkModifiers;
 import nl.ggentertainment.chunkweaver.common.core.classes.engineer.EngineerEvents;
 import nl.ggentertainment.chunkweaver.common.core.classes.engineer.VaultSlotReward;
+import nl.ggentertainment.chunkweaver.common.core.classes.explorer.ExplorerAttributes;
 import nl.ggentertainment.chunkweaver.common.core.classes.explorer.ExplorerEvents;
 import nl.ggentertainment.chunkweaver.common.core.classes.farmer.FarmerAttributes;
 import nl.ggentertainment.chunkweaver.common.core.classes.fighter.FighterAbilityReward;
@@ -99,6 +100,7 @@ public class ChunkWeaver {
         MinerAttributes.register(modEventBus);
         FighterAttributes.register(modEventBus);
         WizardAttributes.register(modEventBus);
+        ExplorerAttributes.register(modEventBus);
 
         /* Deferred Registers */
         ATTACHMENT_TYPES.register(modEventBus);
