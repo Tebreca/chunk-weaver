@@ -1,25 +1,24 @@
+# Chunk weaver
+========
+Chunkweaver adds 7 MMO-like classes to the game;
 
-Installation information
-=======
+- Engineer
+- Wizard
+- Explorer
+- Miner
+- Farmer
+- Blacksmith
+- Fighter
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+These classes contain buffs, while the base game is made harder. This will lead to players having to stick to their roles, and working together in order to survive.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+Additionally, chunkweaver includes;
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+- Custom skill trees for each class
+- 3 Fighter subclasses, each with their own ability
+- A rift, to trade with entities from another plane, allowing for player-minted currencies
+- Some Quality of Life stuff to handle such coins.
+- A 'key' system allowing for more advanced item filtering and processing.
+- A custom structure, where players can find tablets of knowledge, which grant skill points when consumed
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+And much more content, based around the idea of a more anarchy-oriented MMORPG experience. All in Modded SMP Minecraft!
