@@ -1,5 +1,4 @@
 # Chunk weaver
-========
 Chunkweaver adds 7 MMO-like classes to the game;
 
 - Engineer
