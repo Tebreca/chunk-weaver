@@ -51,7 +51,7 @@ public class FighterEvents {
             double negate_chance = negate_chance_attr == null ? 0 : negate_chance_attr.getValue();
             double negate_amount = negate_amount_attr == null ? 0 : negate_amount_attr.getValue();
             if (random.nextDouble() <= negate_chance) {
-                event.setNewDamage((float) (negate_amount * event.getNewDamage()));
+                event.setNewDamage((float) ((1f - negate_amount) * event.getNewDamage()));
             }
             if (player.hasData(FIGHTER_ABILITY_ATTACHMENT)) {
                 AbilityAttachment data = player.getData(FIGHTER_ABILITY_ATTACHMENT);
